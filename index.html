@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NASA Memory Game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>OUT OF SPACE</h2>
+      <h3>Memory Game</h3>
+      <button class="button" id="new-game-btn">Play New Game</button>
+    </div>
+    <div class="container">
+      <div
+        class="mCard back"
+        id="NASA1"
+        style="background-image: url(./img/NASA1.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA2"
+        style="background-image: url(./img/NASA2.png)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA3"
+        style="background-image: url(./img/NASA4.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA4"
+        style="background-image: url(./img/NASA6.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA5"
+        style="background-image: url(./img/NASA7.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA6"
+        style="background-image: url(./img/NASA2.png)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA7"
+        style="background-image: url(./img/NASA3.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA8"
+        style="background-image: url(./img/NASA1.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA9"
+        style="background-image: url(./img/NASA4.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA10"
+        style="background-image: url(./img/NASA6.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA11"
+        style="background-image: url(./img/NASA7.jpg)"
+      ></div>
+      <div
+        class="mCard back"
+        id="NASA12"
+        style="background-image: url(./img/NASA3.jpg)"
+      ></div>
+    </div>
+    <div id="screen-overlay">
+      <div class="winner-overlay">
+        <h1 id="Winner-text">You are Galactic Winner!</h1>
+        <img
+          id="winner-gif"
+          alt="winner-gif"
+          src="https://media2.giphy.com/media/zCln43mMti1UI/200.webp?cid=790b7611c82d9b6c93b19f8a9b7eb798dbbea8ee5f33df25&rid=200.webp"
+        />
+        <button class="button" id="new-game-overlay">New Game</button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+:root {
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Merriweather", serif;
+  font-size: 65.8%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  background-color: #212121;
+}
+
+.header {
+  margin-bottom: 5%;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0.1rem;
+}
+
+.header:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #ffff;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.container {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+.mCard {
+  position: relative;
+  width: 20%;
+  margin: 1%;
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #105bd8;
+}
+
+.mCard:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #105bd8;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.back {
+  background-image: url("http://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png") !important;
+}
+
+.flip-card .back {
+  transform: rotateY(180deg);
+  perspective: 1000px;
+}
+
+#new-game-btn {
+  height: 2rem;
+  color: #105bd8;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+#new-game-btn:hover {
+  cursor: pointer;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+#screen-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.winner-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Winner-text {
+  color: #ffffff;
+  margin: 6%;
+  font-size: 4rem;
+  font-family: inherit;
+  font-weight: 600;
+  text-align: center;
+}
+#winner-gif {
+  max-width: 100%;
+  height: 40rem;
+}
+
+#new-game-overlay {
+  height: 7rem;
+  width: 25rem;
+  margin: 3%;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #105bd8;
+  font-weight: bold;
+}
+#new-game-overlay:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #105bd8;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
